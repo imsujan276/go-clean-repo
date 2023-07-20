@@ -1,4 +1,4 @@
-# File Sharing with Golang
+# Go Clean Repo
 
 This project is designed to help beginners learn backend development using Golang. It covers a wide range of beginner concepts and techniques in the backend development space. Topics covered in this project include:
 
