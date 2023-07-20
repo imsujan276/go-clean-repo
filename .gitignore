@@ -1,5 +1,5 @@
 .air.toml
 tmp/
 *.sum
-github.com/imsujan276/go-clean-repo
 uploads/
+.env

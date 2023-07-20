@@ -4,8 +4,8 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/jinzhu/gorm"
 
-	"github.com/imsujan276/go-clean-repo/controllers/file-controllers"
-	"github.com/imsujan276/go-clean-repo/handlers/file-handlers"
+	filecontrollers "github.com/imsujan276/go-clean-repo/controllers/file-controllers"
+	fileHandlers "github.com/imsujan276/go-clean-repo/handlers/file-handlers"
 	"github.com/imsujan276/go-clean-repo/middlewares"
 )
 
