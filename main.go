@@ -1,10 +1,11 @@
 package main
 
 import (
+	"log"
+
 	"github.com/imsujan276/go-clean-repo/configs"
 	"github.com/imsujan276/go-clean-repo/routes"
 	"github.com/imsujan276/go-clean-repo/utils"
-	"log"
 
 	"github.com/gin-gonic/gin"
 )
@@ -24,11 +25,9 @@ func SetupAppRouter() *gin.Engine {
 	gin.SetMode(gin.DebugMode)
 
 	api := router.Group("api/v1")
-
 	file := api.Group("/file")
 
 	routes.InitAuthRoutes(db, api)
-
 	routes.InitFileRoutes(db, file)
 
 	SetupStaticFiles(router)
