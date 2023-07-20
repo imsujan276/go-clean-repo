@@ -26,16 +26,20 @@ func main() {
 
 func SetupAppRouter() *gin.Engine {
 
-	db := configs.Connection()
+	service := configs.NewDBService()
+	db := service.Connection()
 
 	router := gin.Default()
 
-	gin.SetMode(gin.TestMode)
+	gin.SetMode(gin.DebugMode)
 
 	api := router.Group("api/v1")
+	file := api.Group("/file")
 
 	routes.InitAuthRoutes(db, api)
+	routes.InitFileRoutes(db, file)
 
+	SetupStaticFiles(router)
 	return router
 }
 ```

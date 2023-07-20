@@ -35,7 +35,6 @@ func SetupAppRouter() *gin.Engine {
 }
 
 func SetupStaticFiles(router *gin.Engine) {
-	// Serve static files from the "uploads/images" directory
 	router.Static("/uploads/images", "./uploads/images")
 	router.Static("/uploads/files", "./uploads/files")
 }
