@@ -1,0 +1,142 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "go",
+    "dateExported": "2023-07-20T08:17:30.461Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "f5981d31-5718-4dff-a532-617f0f251caa",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:3388/api/v1/login/",
+            "method": "POST",
+            "sortNum": 10000,
+            "created": "2023-07-19T08:33:51.868Z",
+            "modified": "2023-07-19T08:50:22.532Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"test@gmail.com\",\n  \"password\": \"password123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "78dc6296-78eb-410b-a4df-aef67c279a87",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "register",
+            "url": "localhost:3388/api/v1/register",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-07-19T08:43:29.313Z",
+            "modified": "2023-07-19T11:49:42.561Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [
+                    {
+                        "name": "username",
+                        "value": "test"
+                    },
+                    {
+                        "name": "email",
+                        "value": "test@gmail.com"
+                    },
+                    {
+                        "name": "password",
+                        "value": "password123"
+                    }
+                ],
+                "files": [
+                    {
+                        "name": "image",
+                        "value": "/Users/suzzan/Desktop/Screenshot 2023-07-18 at 2.24.48 PM.png"
+                    }
+                ]
+            },
+            "tests": []
+        },
+        {
+            "_id": "7f09f205-1c5f-45d4-baea-231476c7ea7b",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "get all files",
+            "url": "localhost:3388/api/v1/file",
+            "method": "GET",
+            "sortNum": 30000,
+            "created": "2023-07-19T11:11:29.530Z",
+            "modified": "2023-07-19T11:50:47.379Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjg5ODUzNzg0LCJpZCI6MTN9.Ein8JoEyx2WVWapUXCFwUaBjVnacIHXY6AqqL0xBxlw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "2dda8a30-2935-4c21-a223-87723cbc7fc6",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "create file",
+            "url": "localhost:3388/api/v1/file/create",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-07-19T11:14:02.956Z",
+            "modified": "2023-07-19T11:50:12.323Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "/Users/suzzan/Downloads/ab26a48affd9f9332aa5e358fe803e3b.png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjg5ODUzNzg0LCJpZCI6MTN9.Ein8JoEyx2WVWapUXCFwUaBjVnacIHXY6AqqL0xBxlw"
+            },
+            "tests": []
+        },
+        {
+            "_id": "683943c1-22e4-4aea-9425-e1382a684cb3",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "delete file",
+            "url": "localhost:3388/api/v1/file/11",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-07-19T11:47:14.423Z",
+            "modified": "2023-07-19T11:51:28.100Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "formdata",
+                "raw": "",
+                "form": [],
+                "files": [
+                    {
+                        "name": "file",
+                        "value": "/Users/suzzan/Downloads/ab26a48affd9f9332aa5e358fe803e3b.png"
+                    }
+                ]
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjg5ODUyNDc0LCJpZCI6MTB9.9uchvKyItLnE8hyL5GkRYIkOvtfQO1szdcHodCqvEPo"
+            },
+            "tests": []
+        }
+    ]
+}

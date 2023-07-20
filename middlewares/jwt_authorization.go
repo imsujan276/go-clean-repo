@@ -21,24 +21,22 @@ func Auth() gin.HandlerFunc {
 
 		var errorResponse UnathorizatedError
 
-		errorResponse.Status = "Forbidden"
-		errorResponse.Code = http.StatusForbidden
-		errorResponse.Method = ctx.Request.Method
-		errorResponse.Message = "Authorization is required for this endpoint"
-
 		if ctx.GetHeader("Authorization") == "" {
+			errorResponse.Status = "Forbidden"
+			errorResponse.Code = http.StatusForbidden
+			errorResponse.Method = ctx.Request.Method
+			errorResponse.Message = "Unathorizated Access"
 			ctx.JSON(http.StatusForbidden, errorResponse)
 			defer ctx.AbortWithStatus(http.StatusForbidden)
 		}
 
 		token, err := utils.VerifyTokenHeader(ctx, "JWT_SECRET")
 
-		errorResponse.Status = "Unathorizated"
-		errorResponse.Code = http.StatusUnauthorized
-		errorResponse.Method = ctx.Request.Method
-		errorResponse.Message = "Invalid Access token"
-
 		if err != nil {
+			errorResponse.Status = "Unathorizated"
+			errorResponse.Code = http.StatusUnauthorized
+			errorResponse.Method = ctx.Request.Method
+			errorResponse.Message = "Invalid Access token"
 			ctx.JSON(http.StatusUnauthorized, errorResponse)
 			defer ctx.AbortWithStatus(http.StatusUnauthorized)
 		} else {
