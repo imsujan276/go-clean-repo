@@ -1,10 +1,8 @@
 # Go Clean Repo
 
-This project is designed to help beginners learn backend development using Golang. It covers a wide range of beginner concepts and techniques in the backend development space. Topics covered in this project include:
-
 - Setting up a database connection using `GORM`
 - Building REST APIs using the `GIN framework`
-- Implementing CRUD operations using `GORM` for data manipulation
+- Implementing CRUD operations using `GORM`
 - Understanding and implementing table associations with foreign keys
 - Efficiently populating fields using the `Preload()` function
 - Serialization of data into JSON format
