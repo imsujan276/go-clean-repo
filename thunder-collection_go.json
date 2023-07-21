@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "go",
-    "dateExported": "2023-07-20T08:17:30.461Z",
+    "dateExported": "2023-07-21T09:59:46.961Z",
     "version": "1.1",
     "folders": [],
     "requests": [
@@ -116,7 +116,7 @@
             "name": "delete file",
             "url": "localhost:3388/api/v1/file/11",
             "method": "DELETE",
-            "sortNum": 50000,
+            "sortNum": 42500,
             "created": "2023-07-19T11:47:14.423Z",
             "modified": "2023-07-19T11:51:28.100Z",
             "headers": [],
@@ -135,6 +135,129 @@
             "auth": {
                 "type": "bearer",
                 "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjg5ODUyNDc0LCJpZCI6MTB9.9uchvKyItLnE8hyL5GkRYIkOvtfQO1szdcHodCqvEPo"
+            },
+            "tests": []
+        },
+        {
+            "_id": "04838384-fba5-4069-9374-4dd508c6298b",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "get all todos",
+            "url": "localhost:3388/api/v1/todo",
+            "method": "GET",
+            "sortNum": 45000,
+            "created": "2023-07-21T09:05:28.941Z",
+            "modified": "2023-07-21T09:06:26.704Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjkwMDE2NzYwLCJpZCI6MTN9.OsPc_KmyVoWKU9EZshuyb09ghwlJJ4oPdVu2HV4lpDQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "07587ea5-97e0-4e64-ae1b-086d129057e1",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "create todo",
+            "url": "localhost:3388/api/v1/todo",
+            "method": "POST",
+            "sortNum": 47500,
+            "created": "2023-07-21T09:06:34.124Z",
+            "modified": "2023-07-21T09:15:02.548Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"H2llo world\",\n  \"completed\": true,\n  \"description\": \"aklsdn \"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjkwMDE2NzYwLCJpZCI6MTN9.OsPc_KmyVoWKU9EZshuyb09ghwlJJ4oPdVu2HV4lpDQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "52924f3b-1da7-49bc-8b2e-0284c54dd470",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "update todo by id",
+            "url": "localhost:3388/api/v1/todo/1",
+            "method": "PUT",
+            "sortNum": 57500,
+            "created": "2023-07-21T09:18:28.218Z",
+            "modified": "2023-07-21T09:44:17.229Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"title\": \"ID 1 update\",\n  \"completed\": false,\n  \"description\": \"aklsdn s\"\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjkwMDE2NzYwLCJpZCI6MTN9.OsPc_KmyVoWKU9EZshuyb09ghwlJJ4oPdVu2HV4lpDQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c1e343f5-565f-4878-8f1e-7999a1f272df",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "get todo by id",
+            "url": "localhost:3388/api/v1/todo/1",
+            "method": "GET",
+            "sortNum": 67500,
+            "created": "2023-07-21T09:42:36.623Z",
+            "modified": "2023-07-21T09:44:02.526Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjkwMDE2NzYwLCJpZCI6MTN9.OsPc_KmyVoWKU9EZshuyb09ghwlJJ4oPdVu2HV4lpDQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "c877acba-6fb2-4e9e-a57c-7a59ec2a52ce",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "delete todo by id",
+            "url": "localhost:3388/api/v1/todo/1",
+            "method": "DELETE",
+            "sortNum": 70000,
+            "created": "2023-07-21T09:58:01.818Z",
+            "modified": "2023-07-21T09:58:23.559Z",
+            "headers": [],
+            "params": [],
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjkwMDE2NzYwLCJpZCI6MTN9.OsPc_KmyVoWKU9EZshuyb09ghwlJJ4oPdVu2HV4lpDQ"
+            },
+            "tests": []
+        },
+        {
+            "_id": "e45a4f18-64c0-420a-8284-2aeb515f2634",
+            "colId": "b470386c-fb4c-404a-9570-4c8293b34fb7",
+            "containerId": "",
+            "name": "update todo status",
+            "url": "localhost:3388/api/v1/todo/update-status",
+            "method": "POST",
+            "sortNum": 72500,
+            "created": "2023-07-21T09:50:09.266Z",
+            "modified": "2023-07-21T09:57:24.474Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"completed\": true,\n  \"id\": 1\n}",
+                "form": []
+            },
+            "auth": {
+                "type": "bearer",
+                "bearer": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdXRob3JpemF0aW9uIjp0cnVlLCJlbWFpbCI6InRlc3RAZ21haWwuY29tIiwiZXhwIjoxNjkwMDE2NzYwLCJpZCI6MTN9.OsPc_KmyVoWKU9EZshuyb09ghwlJJ4oPdVu2HV4lpDQ"
             },
             "tests": []
         }
