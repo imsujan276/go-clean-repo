@@ -1,9 +1,10 @@
 package fileHandlers
 
 import (
+	"net/http"
+
 	"github.com/imsujan276/go-clean-repo/models"
 	"github.com/imsujan276/go-clean-repo/utils"
-	"net/http"
 
 	"github.com/gin-gonic/gin"
 )
@@ -27,11 +28,11 @@ func (h *handler) GetAllFilesHandler(context *gin.Context) {
 	case http.StatusOK:
 
 		//  populate the url field
-		for index := range fileResponse {
-			file := &fileResponse[index]
-			// fileUrl := utils.GetFileUrl(file.AccessKey)
-			file.Url = file.Url
-		}
+		// for index := range fileResponse {
+		// 	file := &fileResponse[index]
+		// 	// fileUrl := utils.GetFileUrl(file.AccessKey)
+		// 	file.Url = file.Url
+		// }
 		utils.APIResponse(context, "Received files", http.StatusOK, &fileResponse)
 		return
 

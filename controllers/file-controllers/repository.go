@@ -1,9 +1,10 @@
 package filecontrollers
 
 import (
+	"net/http"
+
 	"github.com/imsujan276/go-clean-repo/models"
 	"github.com/imsujan276/go-clean-repo/utils"
-	"net/http"
 
 	"github.com/jinzhu/gorm"
 )

@@ -25,10 +25,13 @@ func SetupAppRouter() *gin.Engine {
 	gin.SetMode(gin.DebugMode)
 
 	api := router.Group("api/v1")
-	file := api.Group("/file")
-
 	routes.InitAuthRoutes(db, api)
+
+	file := api.Group("/file")
 	routes.InitFileRoutes(db, file)
+
+	todo := api.Group("/todo")
+	routes.InitTodoRoutes(db, todo)
 
 	SetupStaticFiles(router)
 	return router
