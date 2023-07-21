@@ -5,11 +5,22 @@ import (
 )
 
 type Service interface {
+	// create todo and return the todo and status code
 	CreateTodo(input *TodoInput) (*models.TodoEntity, int)
+
+	// get all todos and return the todos and status code
 	GetAllTodos(userId uint) ([]models.TodoEntity, int)
+
+	// Get todo by id amd return the todo and status code
 	GetTodoById(todoId uint) (*models.TodoEntity, int)
+
+	// Update todo by id and return the todo and status code
 	UpdateTodoById(input *TodoInput) (*models.TodoEntity, int)
+
+	// Update todo status and return the todo and status code
 	UpdateTodoStatus(input *TodoStatusInput) (*models.TodoEntity, int)
+
+	// Delete todo by id and return the status code
 	DeleteTodoById(todoId uint) int
 }
 
